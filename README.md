@@ -51,6 +51,8 @@ Hysteria2 的上、下行参数是客户端配置值，不是实测速率。
 
 ## 客户端与快速开始
 
+官方使用文档提供 Phantom 安卓版、Mac 版和 Win 版教程；iOS 栏目列有 Nextin、Clash Lite 和 ClashMi，官网将前两项标为推荐。请按自己的平台阅读对应教程。核验日期：2026 年 10 月 28 日。
+
 1. 注册并登录 [Phantom 控制台](https://pin.dianping.men/app/dashboard)，确认当前套餐和试用信息。
 2. 使用控制台提供的客户端下载或订阅导入方式。
 3. 使用自己的 Clash/Mihomo 类客户端时，先更新到支持订阅内协议的版本；Mieru 是否可用要检查具体内核版本。
@@ -67,6 +69,19 @@ Hysteria2 的上、下行参数是客户端配置值，不是实测速率。
 | 出口与 DNS | 用 [IPLeak](https://ipleak.net/) 查看实际出口和 DNS |
 
 ## 套餐与购买
+
+核验日期：2026 年 10 月 28 日。来源：[Phantom 官方购买套餐页](https://pin.dianping.men/app/plan)（需登录）。
+
+| 套餐 | 月付 | 流量 |
+| --- | ---: | ---: |
+| 天蝎座 | ¥1 | 100G |
+| 水瓶座 | ¥10 | 300G |
+| 双子座 | ¥20 | 650G |
+
+官网列表将天蝎座、水瓶座的“带宽”分别标为 `100G`、`300G`，双子座标为“无限制”；前两项单位有歧义，不能据此换算 Mbps。设备数、其他付款周期、退款和试用规则需在详情及使用文档核对，价格以购买时页面为准。
+
+官方入口：[使用文档](https://pin.dianping.men/app/knowledge) · [Telegram 机器人 @phanAir_bot](https://t.me/phanAir_bot)。
+
 
 套餐价格、月流量、设备数和购买周期在 [Phantom 控制台](https://pin.dianping.men/app/dashboard)中查看。先完成试用，再按自己的月流量和同时在线设备数选择。
 

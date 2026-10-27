@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://phantom-release.github.io/NanoCloud/sitemap.xml
+Sitemap: https://phantom-release.github.io/Phantom/sitemap.xml

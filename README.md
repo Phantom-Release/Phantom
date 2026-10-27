@@ -1,6 +1,10 @@
-# Phantom 代理机场：注册入口、试用节点与客户端指南
+# Phantom 使用指南：套餐、注册与客户端
 
-Phantom 代理机场提供多地区代理订阅。本页整理注册入口、试用节点、客户端配置和常见问题，方便先试用，再选择适合自己的套餐。
+Phantom 代理机场提供多地区代理订阅。本页整理注册入口、试用节点、客户端配置和常见问题，帮助核对信息并选择适合自己的配置方式；试用条件以官方平台为准。
+
+[在线指南](https://phantom-release.github.io/Phantom/) · [套餐](https://phantom-release.github.io/Phantom/plans.html) · [客户端](https://phantom-release.github.io/Phantom/windows-client.html) · [资料来源与返佣说明](https://phantom-release.github.io/Phantom/about.html)
+
+本指南由 Phantom-Release 维护，使用 AI 辅助整理并按已访问的官方页面核对套餐与客户端目录。账户、订阅、购买和售后由官方平台处理。
 
 ## 注册与使用入口
 
@@ -16,7 +20,9 @@ Phantom 代理机场提供多地区代理订阅。本页整理注册入口、试
 
 ## Phantom 试用节点
 
-本次提供的试用配置包含 **50 条节点记录、4 种协议、8 类地区标签**。
+本次未重新获取原始订阅。以下统计不代表当前在线节点数、独立服务器数量或测速结果，当前试用资格、流量和时长请在控制台核对。
+
+沿用原仓库整理的试用配置快照，包含 **50 条节点记录、4 种协议、8 类地区标签**。
 
 | 协议 | 节点记录 | 配置特征 |
 | --- | ---: | --- |
@@ -83,7 +89,7 @@ Hysteria2 的上、下行参数是客户端配置值，不是实测速率。
 官方入口：[使用文档](https://pin.dianping.men/app/knowledge) · [Telegram 机器人 @phanAir_bot](https://t.me/phanAir_bot)。
 
 
-套餐价格、月流量、设备数和购买周期在 [Phantom 控制台](https://pin.dianping.men/app/dashboard)中查看。先完成试用，再按自己的月流量和同时在线设备数选择。
+套餐价格、月流量、设备数和购买周期在 [Phantom 控制台](https://pin.dianping.men/app/dashboard)中查看。如官方提供试用，可先验证网络适配，再按月流量和设备需求选择。
 
 本介绍沿用 [NanoCloud 指南](https://github.com/NanoCloud-Release/NanoCloud)的“注册—节点—客户端—测试—排障”结构；Phantom 的套餐、优惠、退款、续费和客户端规则需分别核对。
 
@@ -106,7 +112,9 @@ Hysteria2 的上、下行参数是客户端配置值，不是实测速率。
 
 ## 来源与更新
 
-- 节点统计：用户提供的 Phantom 试用配置，整理日期 **2026 年 10 月 28 日**。
+- 节点统计：沿用原仓库的 Phantom 试用配置快照，原整理日期 **2026 年 10 月 28 日**。
 - 注册入口：NanoCloud 现有介绍中的 Phantom 推荐入口。
 - [Phantom 控制台](https://pin.dianping.men/app/dashboard)。
 - 本仓库仅发布节点汇总和使用指南，不包含原始订阅或连接凭据。
+
+网站结构、搜索可见性和后续核查说明见 [SEO.md](SEO.md)。

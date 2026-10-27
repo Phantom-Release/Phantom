@@ -1,3 +1,5 @@
+# Project-path reference only; crawlers use /robots.txt at the host root.
+# See SEO.md for deployment limitations.
 User-agent: *
 Allow: /
 Sitemap: https://phantom-release.github.io/Phantom/sitemap.xml

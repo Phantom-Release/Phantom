@@ -1,4 +1,76 @@
 <!doctype html>
-<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Phantom 代理机场：注册入口、试用节点与客户端指南</title><meta name="description" content="Phantom 代理机场介绍：注册入口、50 条试用节点、TUIC / Hysteria2 / Mieru / VLESS 协议、客户端配置与使用排障。"><link rel="canonical" href="https://phantom-release.github.io/Phantom/"><meta property="og:title" content="Phantom 代理机场：注册入口、试用节点与客户端指南"><meta property="og:description" content="Phantom 代理机场介绍：注册入口、50 条试用节点、TUIC / Hysteria2 / Mieru / VLESS 协议、客户端配置与使用排障。"><meta property="og:type" content="website"><meta property="og:url" content="https://phantom-release.github.io/Phantom/"><link rel="stylesheet" href="assets/site.css"><style>
-.guide{max-width:940px;padding:56px 0 80px}.guide h2{font-size:clamp(24px,4vw,34px);margin:52px 0 18px}.guide h3{margin:30px 0 12px}.guide a{color:var(--green)}.guide li{margin:10px 0}.guide code{overflow-wrap:anywhere}.table-wrap{overflow-x:auto;margin:24px 0;border:1px solid var(--line);border-radius:12px;background:white}.guide table{width:100%;border-collapse:collapse;min-width:430px}.guide th,.guide td{text-align:left;padding:14px 18px;border-bottom:1px solid var(--line)}.guide th{background:#edf2ec}.guide h1{font-size:clamp(30px,5vw,48px)}@media(max-width:650px){.topbar nav{display:none}.topbar{gap:12px}.header-cta{font-size:13px}.guide{padding-top:24px}.shell{width:calc(100% - 32px)}}
-</style></head><body><a class="skip-link" href="#main">跳到主要内容</a><header class="topbar"><a class="wordmark" href="index.html"><span class="mark">P</span>Phantom</a><nav aria-label="主导航"><a href="plans.html">套餐</a><a href="trial.html">试用节点</a><a href="windows-client.html">客户端</a><a href="network-troubleshooting.html">排障</a></nav><a class="header-cta" href="https://pin.dianping.men/auth/register?code=vyMwqgOF" rel="sponsored nofollow">注册 Phantom ↗</a></header><main id="main"><section class="hero shell"><div class="hero-copy"><p class="kicker">Phantom-Release / 使用指南</p><h1>Phantom 代理机场<br><em>先试用，再选择。</em></h1><p class="lede">从注册、导入到日常使用，把节点和客户端信息放在一起。试用配置包含 50 条节点记录，覆盖 4 种协议与 8 类地区标签。</p><div class="hero-actions"><a class="button button-dark" href="https://pin.dianping.men/auth/register?code=vyMwqgOF" rel="sponsored nofollow">注册 Phantom ↗</a><a class="button button-quiet" href="trial.html">查看试用节点 ↓</a></div><p class="fineprint">通过 AFF 入口注册，推荐者可能获得平台返佣。也可使用<a href="https://pin.dianping.men/auth/register">普通注册</a>。</p></div><div class="signal-panel"><div class="signal-top"><span>试用配置快照</span><span>2026.10.28</span></div><div class="signal-stats"><div><strong>50</strong><small>节点记录</small></div><div><strong>4</strong><small>协议类型</small></div><div><strong>8</strong><small>地区标签</small></div></div><p class="signal-note">TUIC · Hysteria2 · Mieru · VLESS<br>通用 / 流量 / 下载 / 教育</p></div></section><section class="shell guide"><p>Phantom 代理机场提供多地区代理订阅。本页整理注册入口、试用节点、客户端配置和常见问题，方便先试用，再选择适合自己的套餐。</p><h2>注册与使用入口</h2><p><strong><a href="https://pin.dianping.men/auth/register?code=vyMwqgOF" rel="sponsored nofollow">注册 Phantom →</a></strong> · <strong><a href="https://pin.dianping.men/app/dashboard">打开控制台 →</a></strong></p><div class="table-wrap"><table><thead><tr><th>入口</th><th>地址</th><th>用途</th></tr></thead><tbody><tr><td>AFF 注册</td><td><a href="https://pin.dianping.men/auth/register?code=vyMwqgOF" rel="sponsored nofollow">使用邀请码注册</a></td><td>邀请码 <code>vyMwqgOF</code></td></tr><tr><td>普通注册</td><td><a href="https://pin.dianping.men/auth/register">直接注册</a></td><td>不使用邀请码</td></tr><tr><td>控制台</td><td><a href="https://pin.dianping.men/app/dashboard">Phantom Dashboard</a></td><td>登录后查看套餐、订阅和账户信息</td></tr></tbody></table></div><p>通过 AFF 入口注册，推荐者可能获得平台返佣。试用额度、期限和套餐价格请在登录后的控制台查看。</p><h2>Phantom 试用节点</h2><p>本次提供的试用配置包含 <strong>50 条节点记录、4 种协议、8 类地区标签</strong>。</p><div class="table-wrap"><table><thead><tr><th>协议</th><th>节点记录</th><th>配置特征</th></tr></thead><tbody><tr><td>TUIC</td><td>24</td><td>ALPN 为 h3，使用 BBR，未跳过证书验证</td></tr><tr><td>Hysteria2</td><td>3</td><td>配置有 50 或 200 的上、下行参数，未跳过证书验证</td></tr><tr><td>Mieru</td><td>7</td><td>TCP 传输，低级别复用</td></tr><tr><td>VLESS</td><td>16</td><td>WebSocket + TLS</td></tr></tbody></table></div><p>Hysteria2 的上、下行参数是客户端配置值，不是实测速率。</p><div class="table-wrap"><table><thead><tr><th>地区标签</th><th>节点记录</th></tr></thead><tbody><tr><td>美国</td><td>12</td></tr><tr><td>日本</td><td>11</td></tr><tr><td>新加坡</td><td>7</td></tr><tr><td>香港</td><td>7</td></tr><tr><td>马来西亚</td><td>4</td></tr><tr><td>台湾</td><td>4</td></tr><tr><td>韩国</td><td>3</td></tr><tr><td>英国</td><td>2</td></tr><tr><td><strong>合计</strong></td><td><strong>50</strong></td></tr></tbody></table></div><p>地区按配置中的名称与旗帜归类；这里统计的是订阅条目，不是独立服务器或出口 IP 数量。水瓶座“教育”节点按旗帜计入马来西亚与台湾。</p><h3>节点名称怎么选</h3><ul><li><strong>通用：</strong> 可以作为首次连接的起点，先打开自己常用的网站。</li><li><strong>流量：</strong> 这份配置中的“流量”节点使用 IPv6 地址或带 v6 标记的域名；使用前检查本机网络是否支持 IPv6。</li><li><strong>下载：</strong> 本次配置中有 2 条日本 Hysteria2 下载节点。</li><li><strong>教育：</strong> 本次配置中有 2 条水瓶座 TUIC 节点。</li><li><strong>M：</strong> 对应 Mieru 节点，需要客户端内核支持。</li></ul><h2>客户端与快速开始</h2><p>官方<a href="https://pin.dianping.men/app/knowledge">使用文档</a>提供 Phantom 安卓版、Mac 版和 Win 版教程；iOS 栏目列有 Nextin、Clash Lite 和 ClashMi，官网将前两项标为推荐。请按自己的平台阅读对应教程。核验日期：2026 年 10 月 28 日。</p><ul><li>注册并登录 <a href="https://pin.dianping.men/app/dashboard">Phantom 控制台</a>，确认当前套餐和试用信息。</li><li>使用控制台提供的客户端下载或订阅导入方式。</li><li>使用自己的 Clash/Mihomo 类客户端时，先更新到支持订阅内协议的版本；Mieru 是否可用要检查具体内核版本。</li><li>更新订阅后先连接一个“通用”节点，再打开常用网页。</li><li>在自己经常使用的网络和时段测试 AI、视频、下载和登录体验。</li></ul><div class="table-wrap"><table><thead><tr><th>需求</th><th>建议检查</th></tr></thead><tbody><tr><td>日常网页、AI 对话</td><td>连续使用常用网站，观察连接中断、登录和地区识别</td></tr><tr><td>视频</td><td>连续播放并拖动进度条，观察缓冲</td></tr><tr><td>下载</td><td>下载实际需要的文件，观察持续速度</td></tr><tr><td>手机流量 / 家庭宽带</td><td>分别测试同一节点</td></tr><tr><td>IPv6 节点</td><td>用 <a href="https://test-ipv6.com/">test-IPv6</a> 检查本机网络</td></tr><tr><td>出口与 DNS</td><td>用 <a href="https://ipleak.net/">IPLeak</a> 查看实际出口和 DNS</td></tr></tbody></table></div><h2>套餐与购买</h2><p>核验日期：2026 年 10 月 28 日。来源：<a href="https://pin.dianping.men/app/plan">Phantom 官方购买套餐页</a>（需登录）。</p><div class="table-wrap"><table><thead><tr><th>套餐</th><th>月付</th><th>流量</th></tr></thead><tbody><tr><td>天蝎座</td><td>¥1</td><td>100G</td></tr><tr><td>水瓶座</td><td>¥10</td><td>300G</td></tr><tr><td>双子座</td><td>¥20</td><td>650G</td></tr></tbody></table></div><p>官网列表将天蝎座、水瓶座的“带宽”分别标为 <code>100G</code>、<code>300G</code>，双子座标为“无限制”；前两项单位有歧义，不能据此换算 Mbps。设备数、其他付款周期、退款和试用规则需在详情及使用文档核对，价格以购买时页面为准。</p><p>官方入口：<a href="https://pin.dianping.men/app/knowledge">使用文档</a> · <a href="https://t.me/phanAir_bot">Telegram 机器人 @phanAir_bot</a>。</p><p>套餐价格、月流量、设备数和购买周期在 <a href="https://pin.dianping.men/app/dashboard">Phantom 控制台</a>中查看。先完成试用，再按自己的月流量和同时在线设备数选择。</p><p>本介绍沿用 <a href="https://github.com/NanoCloud-Release/NanoCloud">NanoCloud 指南</a>的“注册—节点—客户端—测试—排障”结构；Phantom 的套餐、优惠、退款、续费和客户端规则需分别核对。</p><h2>常见问题</h2><div class="table-wrap"><table><thead><tr><th>现象</th><th>排查顺序</th></tr></thead><tbody><tr><td>节点全部超时</td><td>确认套餐有效，更新订阅，再换网络测试</td></tr><tr><td>“流量”节点超时，“通用”可用</td><td>检查本机、路由器和运营商的 IPv6 支持</td></tr><tr><td>导入后缺少节点或提示未知协议</td><td>更新客户端与内核，检查是否支持 Mieru、TUIC、Hysteria2、VLESS</td></tr><tr><td>浏览器能用，其他应用不能用</td><td>检查应用是否遵循系统代理；按客户端说明使用 TUN</td></tr><tr><td>某个网站打不开</td><td>换节点后复测，检查规则是否让该网站经过代理</td></tr><tr><td>高峰期卡顿</td><td>在同一网络换地区或协议，对比持续使用体验</td></tr></tbody></table></div><h2>配置与传输安全</h2><p>本次配置中 TUIC 和 Hysteria2 均明确设置 <code>skip-cert-verify: false</code>，VLESS 均启用 TLS。代理会转发你的流量，HTTPS 负责加密浏览器与目标网站之间的内容；服务端仍可能看到目标地址、连接时间和流量大小。</p><p>订阅链接、节点密码、UUID 和账户信息应自行保管，不要放进公开仓库。</p><h2>来源与更新</h2><ul><li>节点统计：用户提供的 Phantom 试用配置，整理日期 <strong>2026 年 10 月 28 日</strong>。</li><li>注册入口：NanoCloud 现有介绍中的 Phantom 推荐入口。</li><li><a href="https://pin.dianping.men/app/dashboard">Phantom 控制台</a>。</li><li>本仓库仅发布节点汇总和使用指南，不包含原始订阅或连接凭据。</li></ul></section></main><footer><div class="shell footer-inner"><span>Phantom-Release · 2026.10.28</span><nav><a href="https://github.com/Phantom-Release/Phantom">GitHub</a><a href="https://pin.dianping.men/app/dashboard">控制台</a><a href="https://pin.dianping.men/auth/register">普通注册</a></nav></div></footer></body></html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Phantom 机场指南：套餐价格、注册入口与客户端</title>
+  <meta name="description" content="查看 Phantom 天蝎座、水瓶座、双子座套餐的月付价格与流量，找到注册和控制台入口，并按试用、客户端、网络排障指南开始使用。价格与来源核验于 2026 年 10 月 28 日。">
+  <meta name="author" content="Phantom-Release">
+  <meta name="theme-color" content="#1d6b42">
+  <link rel="canonical" href="https://phantom-release.github.io/Phantom/">
+  <link rel="icon" href="assets/phantom-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/site.css?v=20261028-guide">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:site_name" content="Phantom 使用指南">
+  <meta property="og:title" content="Phantom 机场指南：套餐价格、注册入口与客户端">
+  <meta property="og:description" content="查看 Phantom 天蝎座、水瓶座、双子座套餐的月付价格与流量，找到注册和控制台入口，并按试用、客户端、网络排障指南开始使用。价格与来源核验于 2026 年 10 月 28 日。">
+  <meta property="og:url" content="https://phantom-release.github.io/Phantom/">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://phantom-release.github.io/Phantom/#website","url":"https://phantom-release.github.io/Phantom/","name":"Phantom 使用指南","inLanguage":"zh-CN"},{"@type":"WebPage","@id":"https://phantom-release.github.io/Phantom/#webpage","url":"https://phantom-release.github.io/Phantom/","name":"Phantom 机场指南：套餐价格、注册入口与客户端","description":"查看 Phantom 天蝎座、水瓶座、双子座套餐的月付价格与流量，找到注册和控制台入口，并按试用、客户端、网络排障指南开始使用。价格与来源核验于 2026 年 10 月 28 日。","inLanguage":"zh-CN","isPartOf":{"@id":"https://phantom-release.github.io/Phantom/#website"},"dateModified":"2026-10-28"}]}</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="wordmark" href="./" aria-label="Phantom 使用指南首页"><span class="mark" aria-hidden="true">P</span><span>Phantom<small>使用指南</small></span></a>
+      <nav class="main-nav" aria-label="主导航"><a href="./" aria-current="page">首页</a><a href="plans.html">套餐</a><a href="trial.html">试用节点</a><a href="windows-client.html">客户端</a><a href="network-troubleshooting.html">排障</a></nav>
+      <a class="header-cta" href="https://pin.dianping.men/auth/register?code=vyMwqgOF" rel="sponsored nofollow">前往注册 <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+  <main id="main" tabindex="-1">
+    <div class="shell"></div>
+
+<section class="hero shell" aria-labelledby="home-title">
+  <p class="eyebrow">PHANTOM / 注册 · 套餐 · 使用</p>
+  <h1 id="home-title"><span>Phantom 机场指南</span><em>把连接的每一步，弄清楚。</em></h1>
+  <p class="lead">先了解套餐，再配置客户端。从注册入口到节点排障，在这里找到下一步。</p>
+  <div class="actions"><a class="button primary" href="plans.html">对比套餐价格 <span aria-hidden="true">↗</span></a><a class="button secondary" href="windows-client.html">开始配置客户端</a></div>
+  <p class="meta">资料核验 <time datetime="2026-10-28">2026 年 10 月 28 日</time> · <a href="about.html">查看来源与适用范围</a></p>
+  <nav class="journey" aria-label="使用流程">
+    <a href="plans.html"><span>01 / 了解</span><strong>套餐与注册</strong><small>价格、流量、购买入口</small></a>
+    <a href="windows-client.html"><span>02 / 配置</span><strong>选择客户端</strong><small>按设备找到官方教程</small></a>
+    <a href="trial.html"><span>03 / 验证</span><strong>试用与节点</strong><small>协议、地区与测试方法</small></a>
+    <a href="network-troubleshooting.html"><span>04 / 排查</span><strong>解决连接问题</strong><small>超时、IPv6、未知协议</small></a>
+  </nav>
+</section>
+<section class="section shell" aria-labelledby="plans-title">
+ <div class="section-heading"><div><p class="eyebrow">月付套餐</p><h2 id="plans-title">先看流量，再看预算。</h2></div><a class="text-link" href="plans.html">完整套餐说明 →</a></div>
+ <p class="section-intro">三档月付信息来自 <a href="https://pin.dianping.men/app/plan">Phantom 官方购买页</a>。实际价格与可选周期以购买时页面为准。</p>
+ <div class="table-wrap" role="region" aria-label="月付套餐对比" tabindex="0"><table><caption>官网月付套餐 · 核验于 2026-10-28</caption><thead><tr><th scope="col">套餐</th><th scope="col">月付</th><th scope="col">流量</th></tr></thead><tbody><tr><th scope="row">天蝎座</th><td>¥1</td><td>100G</td></tr><tr><th scope="row">水瓶座</th><td>¥10</td><td>300G</td></tr><tr><th scope="row">双子座</th><td>¥20</td><td>650G</td></tr></tbody></table></div>
+ <p class="note">官网部分带宽单位存在歧义；设备数、退款与试用规则尚需核对。<a href="plans.html#purchase-checklist">查看购买前检查项</a>。</p>
+</section>
+<section class="section section-tint" aria-labelledby="start-title"><div class="shell two-column">
+ <div><p class="eyebrow">第一次使用</p><h2 id="start-title">先让一台设备连接成功。</h2><p>选择对应平台的官方教程，导入最新订阅，再从“通用”节点开始测试。</p><a class="text-link" href="windows-client.html">打开客户端配置指南 →</a></div>
+ <ol class="steps"><li><strong>登录控制台</strong><p>确认套餐有效，查看当前试用条件与订阅入口。</p></li><li><strong>按平台安装和导入</strong><p>Windows、Android、macOS 与 iOS 的操作不同，按官方文档完成配置。</p></li><li><strong>测试你常用的网站</strong><p>分别用家庭宽带和手机网络复测，遇到问题时记录错误与节点标签。</p></li></ol>
+</div></section>
+<section class="section shell" aria-labelledby="snapshot-title"><div class="section-heading"><div><p class="eyebrow">节点资料</p><h2 id="snapshot-title">50 条记录，是一次配置快照。</h2></div><a class="text-link" href="trial.html">查看协议与地区分布 →</a></div>
+ <p class="section-intro">沿用原仓库于 2026-10-28 整理的试用配置统计：TUIC 24 条、Hysteria2 3 条、Mieru 7 条、VLESS 16 条，包含 8 类地区标签。它不代表实时在线节点数、独立服务器数或测速结果。</p>
+ <div class="fact-row"><div><strong>50</strong><span>配置条目</span></div><div><strong>4</strong><span>协议类型</span></div><div><strong>8</strong><span>地区标签</span></div></div>
+</section>
+<section class="section section-tint" aria-labelledby="faq-title"><div class="shell"><p class="eyebrow">常见问题</p><h2 id="faq-title">开始之前，你可能想知道</h2>
+ <div class="faq-list"><details><summary>现在可以试用吗？额度和时间是多少？</summary><p>当前试用资格、流量和时长需在 <a href="https://pin.dianping.men/app/dashboard">Phantom 控制台</a>核对。本指南中的 50 条节点是历史配置统计，不能据此推断新用户试用规则。</p></details>
+ <details><summary>为什么“流量”节点超时，“通用”节点能用？</summary><p>历史配置中的“流量”节点使用 IPv6 地址或带 v6 标记的域名。先检查本机、路由器和运营商是否支持 IPv6，再按<a href="network-troubleshooting.html">网络排障指南</a>逐项验证。</p></details>
+ <details><summary>邀请码注册和普通注册有什么区别？</summary><p>邀请码为 <code>vyMwqgOF</code>，通过该入口注册，推荐者可能获得平台返佣。你也可以<a href="https://pin.dianping.men/auth/register">直接注册</a>。本页未确认邀请码是否附带试用或其他权益。</p></details></div>
+</div></section>
+<section class="section shell" aria-labelledby="links-title"><div class="section-heading"><div><p class="eyebrow">常用入口</p><h2 id="links-title">准备好后，前往官方平台。</h2></div></div>
+ <div class="resource-links"><a href="https://pin.dianping.men/app/dashboard"><strong>账户控制台 ↗</strong><span>套餐、订阅与账户信息</span></a><a href="https://pin.dianping.men/app/knowledge"><strong>官方使用文档 ↗</strong><span>按设备查看配置教程</span></a><a href="https://t.me/phanAir_bot"><strong>Telegram 机器人 ↗</strong><span>@phanAir_bot</span></a></div>
+ <p class="note">本页是资料指南，账户、订阅与购买由官方平台处理。<a href="about.html">了解资料来源及更新方式</a>。</p>
+</section>
+
+  </main>
+  <footer class="site-footer">
+    <div class="shell footer-inner"><div><a class="footer-brand" href="./">Phantom 使用指南</a><p>由 Phantom-Release 维护 · <a href="about.html">资料来源与返佣说明</a></p></div>
+    <nav aria-label="页脚导航"><a href="plans.html">套餐价格</a><a href="windows-client.html">客户端教程</a><a href="network-troubleshooting.html">连接排障</a><a href="https://github.com/Phantom-Release/Phantom">GitHub 仓库</a><a href="https://github.com/Phantom-Release/Phantom/issues">反馈更正</a></nav></div>
+  </footer>
+</body>
+</html>

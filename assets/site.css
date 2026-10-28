@@ -279,3 +279,5 @@ body { font-family:"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif; }
 .entry-table-row { background:#eff5e8; font-weight:650; }
 @media(max-width:900px) { .entry-price-panel { padding:24px; min-height:395px; }.entry-price strong { font-size:104px; }.one-yuan-spotlight { gap:20px; padding:24px; }.one-yuan-spotlight h2 { font-size:27px; }.spotlight-price strong { font-size:85px; } }
 @media(max-width:650px) { .hero-brandline { font-size:23px; margin-bottom:12px; }.hero-v2 h1 { font-size:39px; }.offer-break { display:initial; }.entry-price-panel { display:block; padding:24px; min-height:0; }.entry-price { margin-top:20px; }.entry-price strong { font-size:95px; }.entry-allowance { margin-block:13px 20px; }.one-yuan-spotlight { grid-template-columns:1fr; padding:22px; gap:24px; }.one-yuan-spotlight h2 { font-size:27px; }.spotlight-price { grid-row:2; border-left:0; border-top:1px solid #bfd0b8; padding:22px 0 0; }.one-yuan-spotlight .actions { align-items:flex-start; }.wordmark small { letter-spacing:.08em; font-size:9px; } }
+
+.trial-summary { max-width:650px; margin:0 0 24px; color:var(--green); font-size:14px; line-height:1.9; }

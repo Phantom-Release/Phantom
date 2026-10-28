@@ -1,8 +1,8 @@
 # Phantom 1 元机场：月付 1 元 100G 套餐与注册指南
 
-Phantom 1 元机场的天蝎座套餐月付 **1 元**，提供 **100G 月流量**。需要更多流量时，可比较水瓶座 10 元 300G 和双子座 20 元 650G 月付套餐。价格与月流量核验于 **2026-10-28**，以购买时官方页面为准。
+Phantom 1 元机场的天蝎座套餐月付 **1 元**，提供 **100G 月流量**。另有水瓶座 10 元 300G 和双子座 20 元 650G 月付套餐。价格与月流量核验于 **2026-10-28**，以购买时官方页面为准。
 
-[查看 1 元套餐详情](https://phantom-release.github.io/Phantom/plans.html#one-yuan) · [官方购买页](https://pin.dianping.men/app/plan)。设备数、试用与退款条件需另行核对。
+[查看 1 元套餐详情](https://phantom-release.github.io/Phantom/plans.html#one-yuan) · [官方购买页](https://pin.dianping.men/app/plan)。通过邀请码 `vyMwqgOF` 注册可获得 **2 天、5G 流量试用**；每日签到累计另获 **2G 流量**。
 
 [在线指南](https://phantom-release.github.io/Phantom/) · [套餐](https://phantom-release.github.io/Phantom/plans.html) · [客户端](https://phantom-release.github.io/Phantom/windows-client.html) · [资料来源与返佣说明](https://phantom-release.github.io/Phantom/about.html)
 
@@ -18,11 +18,11 @@ Phantom 1 元机场的天蝎座套餐月付 **1 元**，提供 **100G 月流量*
 | 普通注册 | [直接注册](https://pin.dianping.men/auth/register) | 不使用邀请码 |
 | 控制台 | [Phantom Dashboard](https://pin.dianping.men/app/dashboard) | 登录后查看套餐、订阅和账户信息 |
 
-通过 AFF 入口注册，推荐者可能获得平台返佣。试用额度、期限和套餐价格请在登录后的控制台查看。
+通过邀请码 `vyMwqgOF` 注册，可获得 2 天、5G 流量试用；每日签到累计可额外获得 2G 流量。推荐者可能获得平台返佣。
 
 ## 查看节点配置参考
 
-本次未重新获取原始订阅。以下统计不代表当前在线节点数、独立服务器数量或测速结果，当前试用资格、流量和时长请在控制台核对。
+节点统计为历史配置资料，当前节点见控制台。
 
 沿用原仓库整理的试用配置快照，包含 **50 条节点记录、4 种协议、8 类地区标签**。
 
@@ -103,13 +103,9 @@ Hysteria2 的上、下行参数是客户端配置值，不是实测速率。
 | 水瓶座 | ¥10 | 300G |
 | 双子座 | ¥20 | 650G |
 
-官网列表将天蝎座、水瓶座的“带宽”分别标为 `100G`、`300G`，双子座标为“无限制”；前两项单位有歧义，不能据此换算 Mbps。设备数、其他付款周期、退款和试用规则需在详情及使用文档核对，价格以购买时页面为准。
+官网列表将天蝎座、水瓶座的“带宽”分别标为 `100G`、`300G`，双子座标为“无限制”；前两项单位有歧义，不能据此换算 Mbps。价格以购买时页面为准。
 
 官方入口：[使用文档](https://pin.dianping.men/app/knowledge) · [Telegram 机器人 @phanAir_bot](https://t.me/phanAir_bot)。
-
-套餐价格、月流量、设备数和购买周期在 [Phantom 控制台](https://pin.dianping.men/app/dashboard)中查看。如官方提供试用，可先验证网络适配，再按月流量和设备需求选择。
-
-购买前核对付款周期、最终金额、流量重置方式、设备数及试用和退款条件。本指南尚未确认设备数、试用权益和退款条件。
 
 ## 排查连接问题
 
@@ -139,8 +135,12 @@ Hysteria2 的上、下行参数是客户端配置值，不是实测速率。
 
 ## 网页功能与写作约定
 
-首页提供月流量筛选、设备教程切换和按故障现象显示的排查指引。关闭 JavaScript 后仍可阅读正文并打开完整指南。流量筛选仅比较套餐月流量，不读取账户或实时节点信息。
+首页提供套餐价格、试用权益、设备教程和故障现象说明。FAQ 直接回答价格、流量、试用、签到和邀请码问题。
 
 文档按任务组织，使用编号步骤、准备条件、验证方法和后续入口。写作约定及 Microsoft 官方参考见 [WRITING.md](WRITING.md)。
 
 本次将 Sites 中已发布的改进版同步到 GitHub Pages；规范网址和 sitemap 使用当前公开地址。公开版本仅包含静态网页、脚本与维护文档。
+
+## 试用信息来源
+
+试用与签到权益更新于 2026-10-28，来源记录见 [SOURCES.md](SOURCES.md)。

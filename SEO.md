@@ -31,3 +31,11 @@
 - [robots.txt 创建规则](https://developers.google.com/search/docs/crawling-indexing/robots/create-robots-txt)与[OpenAI 爬虫说明](https://developers.openai.com/api/docs/bots)：区分根目录策略和不同爬虫用途。
 
 上述改进帮助读者理解页面并让搜索引擎读取内容，不保证排名、收录或 AI 引用。
+
+## Sites 改进版同步到 GitHub Pages
+
+2026-10-28：同步 Sites 版本的首页布局、月流量筛选、平台教程切换及按现象显示的排障指引，并应用 WRITING.md 中的任务型文档写作约定。保留六个页面地址。
+
+发布时将页面 canonical、Open Graph、JSON-LD 与 sitemap 统一为 `https://phantom-release.github.io/Phantom/`。脚本和样式使用相对路径，适用于项目子目录。项目的 robots.txt 仍是参考文件，实际爬虫策略取决于域名根目录文件。
+
+Sites 托管身份、访问配置和本地发布归档不属于公开站点源码，不随本次同步提交。GitHub Pages 的发布结果与搜索收录需要分别核查。

@@ -39,3 +39,5 @@
 发布时将页面 canonical、Open Graph、JSON-LD 与 sitemap 统一为 `https://phantom-release.github.io/Phantom/`。脚本和样式使用相对路径，适用于项目子目录。项目的 robots.txt 仍是参考文件，实际爬虫策略取决于域名根目录文件。
 
 Sites 托管身份、访问配置和本地发布归档不属于公开站点源码，不随本次同步提交。GitHub Pages 的发布结果与搜索收录需要分别核查。
+
+2026-10-28：按用户要求聚焦“Phantom 1 元机场”，首页与套餐页前置天蝎座月付 1 元、100G 月流量，标题、摘要和结构化数据同步。借鉴 NanoCloud 的价格优先组织方式，产品权益仍使用 Phantom 自身来源。

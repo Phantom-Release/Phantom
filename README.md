@@ -1,6 +1,8 @@
-# Phantom 使用指南：套餐、注册与客户端
+# Phantom 1 元机场：月付 1 元 100G 套餐与注册指南
 
-Phantom 代理机场提供多地区代理订阅。本页整理注册入口、试用节点、客户端配置和常见问题，帮助核对信息并选择适合自己的配置方式；试用条件以官方平台为准。
+Phantom 1 元机场的天蝎座套餐月付 **1 元**，提供 **100G 月流量**。需要更多流量时，可比较水瓶座 10 元 300G 和双子座 20 元 650G 月付套餐。价格与月流量核验于 **2026-10-28**，以购买时官方页面为准。
+
+[查看 1 元套餐详情](https://phantom-release.github.io/Phantom/plans.html#one-yuan) · [官方购买页](https://pin.dianping.men/app/plan)。设备数、试用与退款条件需另行核对。
 
 [在线指南](https://phantom-release.github.io/Phantom/) · [套餐](https://phantom-release.github.io/Phantom/plans.html) · [客户端](https://phantom-release.github.io/Phantom/windows-client.html) · [资料来源与返佣说明](https://phantom-release.github.io/Phantom/about.html)
 

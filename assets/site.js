@@ -1,20 +1,4 @@
 'use strict';
-const usageForm = document.querySelector('#usage-filter');
-if (usageForm) {
-  usageForm.hidden = false;
-  usageForm.addEventListener('submit', event => {
-    event.preventDefault();
-    const input = usageForm.elements.usage;
-    if (!input.reportValidity()) return;
-    const required = Number(input.value);
-    const cards = [...document.querySelectorAll('[data-capacity]')];
-    const match = cards.find(card => Number(card.dataset.capacity) >= required);
-    cards.forEach(card => card.classList.toggle('match', card === match));
-    document.querySelector('#plan-result').textContent = match
-      ? `满足 ${required}G 月流量的最低档：${match.querySelector('h3').textContent}。购买前，请核对付款周期和设备限制。`
-      : '现有三档月流量均低于输入值，请到官网核对其他可选套餐。';
-  });
-}
 const devices = {
   win: ['Windows · Phantom(Win版)', '在官方使用文档中选择 Phantom(Win版)，按教程下载客户端并导入订阅。'],
   android: ['Android · Phantom(安卓版)', '在官方使用文档中选择 Phantom(安卓版)，按教程安装并导入控制台提供的订阅。'],

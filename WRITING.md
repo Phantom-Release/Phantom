@@ -41,3 +41,7 @@
 - [操作说明中的格式](https://learn.microsoft.com/en-us/style-guide/procedures-instructions/formatting-text-in-instructions)：界面名称、错误信息与代码文本的格式。
 
 英文大小写等规则按中文语境处理；保留产品、协议与教程名称的原始拼写。
+
+## 信息表述
+
+套餐正文提供价格、流量和入口，不按读者用途推荐套餐。FAQ 在当前页直接回答已知信息。核验日期、历史配置和返佣说明集中记录，避免重复提示。试用与签到权益按 SOURCES.md 的用户确认资料更新。

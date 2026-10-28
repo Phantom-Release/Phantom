@@ -10,20 +10,20 @@
 <meta content="#1d6b42" name="theme-color"/>
 <link href="https://phantom-release.github.io/Phantom/network-troubleshooting.html" rel="canonical"/>
 <link href="assets/phantom-mark.svg" rel="icon" type="image/svg+xml"/>
-<link href="assets/site.css?v=20261028-docs" rel="stylesheet"/>
+<link href="assets/site.css?v=20261028-one-yuan" rel="stylesheet"/>
 <meta content="website" property="og:type"/>
 <meta content="zh_CN" property="og:locale"/>
-<meta content="Phantom 使用指南" property="og:site_name"/>
+<meta content="Phantom 1 元机场" property="og:site_name"/>
 <meta content="排查 Phantom 连接问题：超时、未知协议与应用连接" property="og:title"/>
 <meta content="按步骤排查全部节点超时、IPv6 节点超时、未知协议和其他应用无法连接，并整理向官方反馈所需的测试记录。" property="og:description"/>
 <meta content="https://phantom-release.github.io/Phantom/network-troubleshooting.html" property="og:url"/>
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://phantom-release.github.io/Phantom/#website","url":"https://phantom-release.github.io/Phantom/","name":"Phantom 使用指南","inLanguage":"zh-CN"},{"@type":"WebPage","@id":"https://phantom-release.github.io/Phantom/network-troubleshooting.html#webpage","url":"https://phantom-release.github.io/Phantom/network-troubleshooting.html","name":"排查 Phantom 连接问题：超时、未知协议与应用连接","description":"按步骤排查全部节点超时、IPv6 节点超时、未知协议和其他应用无法连接，并整理向官方反馈所需的测试记录。","inLanguage":"zh-CN","isPartOf":{"@id":"https://phantom-release.github.io/Phantom/#website"},"dateModified":"2026-10-28"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://phantom-release.github.io/Phantom/"},{"@type":"ListItem","position":2,"name":"网络排障","item":"https://phantom-release.github.io/Phantom/network-troubleshooting.html"}]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://phantom-release.github.io/Phantom/#website","url":"https://phantom-release.github.io/Phantom/","name":"Phantom 1 元机场","inLanguage":"zh-CN"},{"@type":"WebPage","@id":"https://phantom-release.github.io/Phantom/network-troubleshooting.html#webpage","url":"https://phantom-release.github.io/Phantom/network-troubleshooting.html","name":"排查 Phantom 连接问题：超时、未知协议与应用连接","description":"按步骤排查全部节点超时、IPv6 节点超时、未知协议和其他应用无法连接，并整理向官方反馈所需的测试记录。","inLanguage":"zh-CN","isPartOf":{"@id":"https://phantom-release.github.io/Phantom/#website"},"dateModified":"2026-10-28"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://phantom-release.github.io/Phantom/"},{"@type":"ListItem","position":2,"name":"网络排障","item":"https://phantom-release.github.io/Phantom/network-troubleshooting.html"}]}]}</script>
 </head>
 <body class="studio">
 <a class="skip-link" href="#main">跳到主要内容</a>
 <header class="site-header">
 <div class="shell header-inner">
-<a aria-label="Phantom 使用指南首页" class="wordmark" href="./"><span aria-hidden="true" class="mark">P</span><span>Phantom<small>使用指南</small></span></a>
+<a aria-label="Phantom 1 元机场首页" class="wordmark" href="./"><span aria-hidden="true" class="mark">P</span><span>Phantom<small>1 元机场 · 使用指南</small></span></a>
 <nav aria-label="主导航" class="main-nav"><a href="./">首页</a><a href="plans.html">套餐</a><a href="trial.html">试用节点</a><a href="windows-client.html">客户端</a><a aria-current="page" href="network-troubleshooting.html">排障</a></nav>
 <a class="header-cta" href="https://pin.dianping.men/auth/register?code=vyMwqgOF" rel="sponsored nofollow">官方注册 <span aria-hidden="true">↗</span></a>
 </div>
@@ -33,7 +33,7 @@
 <article class="shell article"><header class="article-header"><p class="eyebrow">Phantom / 使用文档</p><h1>排查 Phantom 连接问题</h1><p class="lead">根据故障现象检查账户、订阅、客户端和网络。每次只改一个设置，并记录测试结果。</p><p class="meta">资料整理：Phantom-Release · <time datetime="2026-10-28">2026 年 10 月 28 日</time> · <a href="about.html">资料说明</a></p></header><div class="article-layout"><nav aria-label="本页目录" class="toc"><strong>本页内容</strong><a href="#prerequisites">开始前记录</a><a href="#all-timeout">排查全部节点超时</a><a href="#ipv6">排查仅“流量”节点超时</a><a href="#protocol">排查“未知协议”错误</a><a href="#apps">排查其他应用无法连接</a><a href="#support">向官方反馈测试记录</a></nav><div class="article-body"><section><h2 id="prerequisites">开始前记录</h2><p>记录设备系统、客户端版本、节点标签和完整错误提示。排查时保持同一设备，每次只改一个设置。</p></section><section><h2 id="all-timeout">排查全部节点超时</h2><ol><li>打开<a href="https://pin.dianping.men/app/dashboard">控制台</a>，确认套餐未到期且流量未耗尽。</li><li>在客户端中更新订阅。</li><li>选择一个“通用”节点进行连接测试（如果有）。</li><li>换一个地区的节点重复测试。</li><li>切换到另一网络，使用同一节点再次测试。</li></ol><div class="doc-result"><p><strong>验证结果：</strong>如果换网络后能连接，继续检查原网络；如果仍无法连接，请<a href="#support">向官方反馈测试记录</a>。</p></div></section><section><h2 id="ipv6">排查仅“流量”节点超时</h2><p>历史配置中的“流量”节点使用 IPv6 地址或带 v6 标记的域名。如果“通用”节点能用，可先检查本地 IPv6 支持。</p><ol><li>在发生故障的设备和网络上打开 <a href="https://test-ipv6.com/">test-IPv6</a>。</li><li>根据测试结果检查设备、路由器和运营商的 IPv6 支持。</li><li>使用同一客户端分别测试“流量”和“通用”节点，记录结果。</li></ol></section><section><h2 id="protocol">排查“未知协议”错误</h2><ol><li>记录客户端显示的完整错误信息。</li><li>按官方教程更新客户端和内核。</li><li>核对内核是否支持订阅中的 Mieru、TUIC、Hysteria2 和 VLESS。</li><li>重新导入订阅并测试。</li></ol></section><section><h2 id="apps">排查其他应用无法连接</h2><p>如果浏览器能访问而其他应用不能访问，先检查应用是否经过代理。</p><ol><li>按客户端文档检查系统代理是否已启用。</li><li>检查代理规则是否包含目标网站或应用。</li><li>如果应用不遵循系统代理，按客户端文档核对是否需要使用 TUN。</li><li>重新打开目标应用并测试。</li></ol></section><section><h2 id="support">向官方反馈测试记录</h2><p>打开<a href="https://pin.dianping.men/app/dashboard">官方控制台</a>，通过平台提供的支持入口反馈以下信息。</p><ul><li>发生时间和时区。</li><li>设备系统、客户端和内核版本。</li><li>网络运营商和节点标签。</li><li>错误原文，以及换节点、换网络后的结果。</li></ul><div class="doc-note"><p><strong>注意：</strong>提交截图前，遮住账户信息、订阅链接、UUID 和密码。不要将连接凭据发布到公开仓库。</p></div></section><section class="related"><h2>后续步骤</h2><a href="windows-client.html">重新检查客户端配置 →</a><a href="trial.html">了解节点标签 →</a></section></div></div></article>
 </main>
 <footer class="site-footer">
-<div class="shell footer-inner"><div><a class="footer-brand" href="./">Phantom 使用指南</a><p>由 Phantom-Release 维护 · <a href="about.html">资料来源与返佣说明</a></p></div>
+<div class="shell footer-inner"><div><a class="footer-brand" href="./">Phantom 1 元机场</a><p>由 Phantom-Release 维护 · <a href="about.html">资料来源与返佣说明</a></p></div>
 <nav aria-label="页脚导航"><a href="plans.html">套餐价格</a><a href="windows-client.html">客户端教程</a><a href="network-troubleshooting.html">连接排障</a><a href="https://github.com/Phantom-Release/Phantom">GitHub 仓库</a><a href="https://github.com/Phantom-Release/Phantom/issues">反馈更正</a></nav></div>
 </footer>
 </body>

@@ -38,6 +38,11 @@
       "id": "faq",
       "title": "Phantom 官方常见问题（需登录）",
       "url": "https://pin.dianping.men/app/knowledge/1?lang=zh-CN"
+    },
+    {
+      "id": "referral-baseline",
+      "title": "当前主推荐入口：README 固定版本",
+      "url": "https://github.com/Phantom-Release/Phantom/blob/30003329dbc812764409d873482eda6742c6f320/README.md"
     }
   ],
   "claims": [
@@ -257,6 +262,17 @@
           ],
           "method": "检查仓库固定版本中的推荐入口；保留原有链接，未替换推荐关系。",
           "nextCheck": "由维护者确认统一使用的推荐入口，并核对试用规则。"
+        },
+        {
+          "id": "invite-unified-20261104",
+          "date": "2026-11-04",
+          "status": "unresolved",
+          "text": "本站推荐入口已统一为 README 保留的邀请码 vyMwqgOF。原先页面差异已消除，当前试用权益及邀请码有效性仍待复核。",
+          "sources": [
+            "referral-baseline"
+          ],
+          "method": "按现有首页与 README 的推荐关系统一本站入口；未注册测试或更换推荐归属。",
+          "nextCheck": "在平台注册结果中确认邀请码有效性及实际试用权益。"
         }
       ]
     },

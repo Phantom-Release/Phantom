@@ -43,6 +43,11 @@
       "id": "referral-baseline",
       "title": "当前主推荐入口：README 固定版本",
       "url": "https://github.com/Phantom-Release/Phantom/blob/30003329dbc812764409d873482eda6742c6f320/README.md"
+    },
+    {
+      "id": "checkin-update",
+      "title": "2026-11-04 用户提供的签到规则",
+      "url": "https://github.com/Phantom-Release/Phantom/blob/main/SOURCES.md#2026-11-04-签到规则更新"
     }
   ],
   "claims": [
@@ -207,6 +212,25 @@
           ],
           "method": "沿用用户确认；不能解释为每天固定到账 2G。",
           "nextCheck": "核对签到规则、累计周期、单次额度和到账记录。"
+        },
+        {
+          "id": "checkin-20261104",
+          "date": "2026-11-04",
+          "status": "reported",
+          "value": {
+            "dailyGB": [
+              1,
+              2,
+              3
+            ],
+            "fromDay3GB": 3
+          },
+          "text": "每日签到第 1 天获得 1 GB，第 2 天获得 2 GB，第 3 天起每天获得 3 GB。本条替代 checkin-20261028 对奖励额度的旧表述。",
+          "sources": [
+            "checkin-update"
+          ],
+          "method": "用户明确提供规则，与 NanoCloud 相同：1 天 1G、第 2 天 2G、第 3 天及以后每天 3G。未进行签到或读取到账记录。",
+          "nextCheck": "仅复核到账、断签后的天数计算和奖励流量有效期；不推定未提供的附加规则。"
         }
       ]
     },

@@ -9,14 +9,14 @@ const badge=o=>`<span class="evidence-badge ${o.status}">${esc(db.statusLabels[o
 const nav=[['index.html','概览'],['plans.html','套餐与注册'],['trial.html','试用与节点'],['windows-client.html','配置客户端'],['network-troubleshooting.html','连接排障'],['evidence.html','事实与变化记录'],['about.html','来源与返佣说明']];
 const AFF_URL='https://pin.dianping.men/auth/register?code=vyMwqgOF';
 const header=file=>{
- const top=`<header class="site-header"><div class="shell header-inner"><a class="wordmark" href="./"><span class="mark" aria-hidden="true">P</span><span>Phantom<small>1 元机场 · 套餐与使用指南</small></span></a><nav class="main-nav" aria-label="主导航">${file==='index.html'?'<a href="#services">服务</a><a href="#plans">套餐</a><a href="#faq">常见问题</a>':'<a href="plans.html">套餐</a><a href="windows-client.html">客户端</a>'}<a class="nav-register" data-aff="navigation" href="${AFF_URL}" rel="sponsored nofollow">邀请码注册 ↗</a></nav></div></header>`;
+ const top=`<header class="site-header"><div class="shell header-inner"><a class="wordmark" href="./"><img class="mark" src="assets/phantom-logo.png?v=20261104" width="38" height="38" alt=""/><span>Phantom<small>1 元机场 · 套餐与使用指南</small></span></a><nav class="main-nav" aria-label="主导航">${file==='index.html'?'<a href="#services">服务</a><a href="#plans">套餐</a><a href="#faq">常见问题</a>':'<a href="plans.html">套餐</a><a href="windows-client.html">客户端</a>'}<a class="nav-register" data-aff="navigation" href="${AFF_URL}" rel="sponsored nofollow">邀请码注册 ↗</a></nav></div></header>`;
  if(file==='index.html')return top;
  return top+`<aside class="guide-sidebar" aria-label="指南导航"><p class="nav-label">使用 Phantom</p><nav aria-label="文档章节">${nav.map(([path,label])=>`<a href="${path==='index.html'?'./':path}"${path===file?' aria-current="page"':''}>${label}</a>`).join('')}</nav></aside>`;
 };
 const baseline=read('index.html');
 const head=baseline.slice(0,baseline.indexOf('<body'));
 const footer=baseline.slice(baseline.indexOf('<footer'),baseline.indexOf('<script defer'));
-const note=(file)=>`<aside class="verification-note shell" aria-label="本页证据范围"><strong>本页证据范围</strong><p>${file==='plans.html'?'套餐价格与月流量于 2026-11-04 在 Edge 核对；带宽单位待核查。试用与签到来自 2026-10-28 用户确认，尚未重新验证。':file==='trial.html'?'50 条节点统计属于历史汇总，未重新获取订阅；试用权益来自用户确认，仍待官方复核。地区标签不等于服务器物理位置。':file==='windows-client.html'?'2026-11-04 已在 Edge 核对官方教程目录。未验证安装包、版本兼容性或实际连接表现。':file==='network-troubleshooting.html'?'以下步骤用于缩小故障范围，不是故障原因的实测结论；IPv6 线索来自历史配置。': '来源状态、历史记录和后续核查方法已集中列出。'} <a href="evidence.html">查看逐项记录与核查方法 →</a></p></aside>`;
+const note=(file)=>`<aside class="verification-note shell" aria-label="本页证据范围"><strong>本页证据范围</strong><p>${file==='plans.html'?'套餐价格与月流量于 2026-11-04 在 Edge 核对；带宽单位待核查。试用来自 2026-10-28 用户确认；签到规则于 2026-11-04 由用户更新，未实测到账。':file==='trial.html'?'50 条节点统计属于历史汇总，未重新获取订阅；试用权益来自用户确认，仍待官方复核。地区标签不等于服务器物理位置。':file==='windows-client.html'?'2026-11-04 已在 Edge 核对官方教程目录。未验证安装包、版本兼容性或实际连接表现。':file==='network-troubleshooting.html'?'以下步骤用于缩小故障范围，不是故障原因的实测结论；IPv6 线索来自历史配置。': '来源状态、历史记录和后续核查方法已集中列出。'} <a href="evidence.html">查看逐项记录与核查方法 →</a></p></aside>`;
 const planCards=['scorpio','aquarius','gemini'].map((id,index)=>{
  const c=db.claims.find(c=>c.id===id),o=latest(c),name=c.title.replace('月付套餐','');
  return `<article class="plan-row"><div><h3>${esc(name)}</h3><small>${index===0?'入门月付':'更多月流量'}</small></div><p class="plan-price">¥${esc(o.value.cny)}<small>/ 月</small></p><p class="plan-traffic">${esc(o.value.traffic)} 月流量</p><a class="plan-register" data-aff="plan-${id}" href="${AFF_URL}" rel="sponsored nofollow">注册选择 ↗</a></article>`;
@@ -43,7 +43,9 @@ html=html.replace(/(<p(?: [^>]*)?>)([\s\S]*?)(<\/p>)/g,(m,a,b,z)=> /(?:2 天|2G)
 }
 html=html.replace(/<link href="assets\/(?:site|docs)\.css[^\"]*" rel="stylesheet"\/>/,'<link href="assets/docs.css?v=20261104" rel="stylesheet"/>');
 html=html.replace(/<link href="assets\/landing\.css[^"]*" rel="stylesheet"\/>/g,'');
-html=html.replace('</head>','<link href="assets/landing.css?v=20261104-aff" rel="stylesheet"/></head>');
+html=html.replace(/<link href="assets\/fonts\.css[^"]*" rel="stylesheet"\/>/g,'');
+html=html.replace(/<link href="assets\/phantom-(?:mark\.svg|source\.ico)[^"]*" rel="icon" type="[^"]*"\/>/,'<link href="assets/phantom-source.ico?v=20261104" rel="icon" type="image/x-icon"/>');
+html=html.replace('</head>','<link href="assets/landing.css?v=20261104-aff" rel="stylesheet"/><link href="assets/fonts.css?v=20261104-brand" rel="stylesheet"/></head>');
 if(file==='index.html')html=html.replace('<body class="docs">','<body class="landing">');
 for(const match of [...html.matchAll(/auth\/register\?code=([A-Za-z0-9]+)/g)])html=html.replaceAll(match[1],new URL(AFF_URL).searchParams.get('code'));
 const canonical='https://phantom.jichang.space/'+(file==='index.html'?'':file);

@@ -13,4 +13,18 @@ if (location.hostname === 'phantom.jichang.space') {
   clarity.async = true;
   clarity.src = 'https://www.clarity.ms/tag/z88y19ryw7';
   document.head.append(clarity);
+
+  document.addEventListener('click', (event) => {
+    const link = event.target.closest('a[data-aff]');
+    if (!link) return;
+    const placement = link.dataset.aff;
+    const plan = link.dataset.plan || '';
+    window.gtag('event', 'affiliate_click', {
+      placement,
+      plan,
+      page_path: location.pathname,
+      outbound_host: new URL(link.href, location.href).host
+    });
+    if (window.clarity) window.clarity('event', 'affiliate_click_' + placement);
+  });
 }

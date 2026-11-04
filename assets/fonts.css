@@ -1,6 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;600;700&display=swap");
-@import url("https://font.sec.miui.com/font/css?family=MiSans:400,500,600,700:Chinese_Simplify,Chinese_Traditional,Latin&display=swap");
-
 /* Prefer native HarmonyOS faces when available, without downloading a full CJK font. */
 @font-face{font-family:"HarmonyOS Sans SC";src:local("HarmonyOS Sans SC"),local("HarmonyOS_Sans_SC"),local("鸿蒙黑体");font-weight:100 900;font-style:normal;font-display:swap}
 :root,.landing{--display:"Google Sans","MiSans","HarmonyOS Sans SC","HarmonyOS Sans","Microsoft YaHei",sans-serif;--body:"Google Sans","MiSans","HarmonyOS Sans SC","HarmonyOS Sans","Microsoft YaHei",sans-serif;--data:"Google Sans","MiSans","HarmonyOS Sans SC",sans-serif}

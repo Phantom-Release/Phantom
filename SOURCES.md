@@ -30,3 +30,9 @@
 - 本轮核查使用 Edge 登录态阅读，没有下单、注册、签到或重新获取订阅。公开资料不含账户、订阅或浏览器状态。
 - 逐项机器可读记录：[data/observations.json](data/observations.json)；网页：[evidence.html](evidence.html)。
 - 文体、视觉和渐进重构参考见 [WRITING.md](WRITING.md) 和 [DESIGN.md](DESIGN.md)。
+
+## 2026-11-04 签到规则更新
+
+用户在本会话明确更新 Phantom 签到奖励：第 1 天 1 GB，第 2 天 2 GB，第 3 天及以后每天 3 GB，规则与 NanoCloud 相同。此条替代旧“累计另获 2G”的额度表述；旧观察保留在历史数据库。未实测到账，不补写断签重置、时区或有效期。
+
+官方品牌资源：在 Edge 访问 https://pin.dianping.men/，读取页面展示的 Logo https://pin.dianping.men/assets/img/logo-BCAjrWmZ.png 与页面声明的 favicon https://pin.dianping.men/favicon.ico，原样保存到 assets/phantom-logo.png 和 assets/phantom-source.ico。

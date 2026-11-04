@@ -53,6 +53,8 @@ html=html.replaceAll('https://phantom-release.github.io/Phantom/','https://phant
 html=html.replace(/<link href="[^"]*" rel="canonical"\/>/,`<link href="${canonical}" rel="canonical"/>`).replace(/<meta content="[^"]*" property="og:url"\/>/,`<meta content="${canonical}" property="og:url"/>`);
 html=html.replaceAll('资料整理：Phantom-Release · <time datetime="2026-10-28">2026 年 10 月 28 日</time>', '资料整理：Phantom-Release · <time datetime="2026-11-04">2026 年 11 月 4 日</time>');
 html=html.replaceAll('"dateModified":"2026-10-28"','"dateModified":"2026-11-04"');
+html=html.replace(/<meta name="msvalidate.01"[^>]*>/g,'').replace(/<script defer src="assets\/analytics.js[^"]*"><\/script>/g,'');
+html=html.replace('</head>','<meta name="msvalidate.01" content="D097409773FE38A7B92D24FDC1021DED"/><script defer src="assets/analytics.js?v=20261104"></script></head>');
 writeFileSync(file,html);
 }
 const urls=readdirSync('.').filter(f=>f.endsWith('.html')).map(file=>`<url><loc>https://phantom.jichang.space/${file==='index.html'?'':file}</loc><lastmod>2026-11-04</lastmod></url>`);

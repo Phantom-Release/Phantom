@@ -158,3 +158,7 @@ Hysteria2 的上、下行参数是客户端配置值，不是实测速率。
 ## 常见问题维护
 
 问答来自 data/faq.json，按注册、价格、设备、安装、续费、连接、退款和客服组织。FAQ 使用确定结论与具体操作；来源依据保留在数据中。其他服务只提供写法参考，规则仍按 Phantom 资料。事实缺口保留在资料记录页，不作为 FAQ 答案。
+
+## 网站统计
+
+Phantom 独立 GA4 测量 ID：`G-FCFD43FZMJ`；Clarity 项目：`z88y19ryw7`。正式域名启用统计，本地预览不发送数据。隐私说明见 about.html#analytics。GSC 使用现有 jichang.space 域名资源并提交 Phantom sitemap；Bing 通过 HTML 标签验证。

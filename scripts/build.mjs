@@ -46,6 +46,7 @@ html=html.replace(/(<p(?: [^>]*)?>)([\s\S]*?)(<\/p>)/g,(m,a,b,z)=> /(?:2 天|2G)
 html=html.replace(/<link href="assets\/(?:site|docs)\.css[^\"]*" rel="stylesheet"\/>/,'<link href="assets/docs.css?v=20261104" rel="stylesheet"/>');
 html=html.replace(/<link href="assets\/landing\.css[^"]*" rel="stylesheet"\/>/g,'');
 html=html.replace(/<link href="assets\/fonts\.css[^"]*" rel="stylesheet"\/>/g,'');
+html=html.replace(/<link\b[^>]*href="https:\/\/(?:fonts\.googleapis\.com|font\.sec\.miui\.com)[^"]*"[^>]*>/g,'');
 html=html.replace(/<link href="assets\/phantom-(?:mark\.svg|source\.ico)[^"]*" rel="icon" type="[^"]*"\/>/,'<link href="assets/phantom-source.ico?v=20261104" rel="icon" type="image/x-icon"/>');
 html=html.replace('</head>','<link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://font.sec.miui.com" crossorigin/><link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/><link href="https://font.sec.miui.com/font/css?family=MiSans:400,500,600,700:Chinese_Simplify,Chinese_Traditional,Latin&display=swap" rel="stylesheet"/><link href="assets/landing.css?v=20261104-aff" rel="stylesheet"/><link href="assets/fonts.css?v=20261104-brand" rel="stylesheet"/></head>');
 if(file==='index.html')html=html.replace('<body class="docs">','<body class="landing">');

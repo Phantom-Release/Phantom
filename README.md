@@ -1,12 +1,18 @@
 # Phantom 1 元机场：月付 1 元 100G 套餐与注册指南
 
-Phantom 1 元机场的天蝎座套餐月付 **1 元**，提供 **100G 月流量**。另有水瓶座 10 元 300G 和双子座 20 元 650G 月付套餐。价格与月流量核验于 **2026-10-28**，以购买时官方页面为准。
+Phantom 1 元机场的天蝎座套餐月付 **1 元**，提供 **100G 月流量**。另有水瓶座 10 元 300G 和双子座 20 元 650G 月付套餐。价格与月流量核验于 **2026-11-04**，以购买时官方页面为准。
 
-[查看 1 元套餐详情](https://phantom-release.github.io/Phantom/plans.html#one-yuan) · [官方购买页](https://pin.dianping.men/app/plan)。通过邀请码 `vyMwqgOF` 注册可获得 **2 天、5G 流量试用**；每日签到累计另获 **2G 流量**。
+[查看 1 元套餐详情](https://phantom.jichang.space/plans.html#one-yuan) · [官方购买页](https://pin.dianping.men/app/plan)。通过邀请码 `vyMwqgOF` 注册可获得 **2 天、5G 流量试用**；每日签到累计另获 **2G 流量**。 **[用户确认 · 待复核]**：来自 2026-10-28 用户确认；本轮未验证到账，签到累计周期不明确。
 
-[在线指南](https://phantom-release.github.io/Phantom/) · [套餐](https://phantom-release.github.io/Phantom/plans.html) · [客户端](https://phantom-release.github.io/Phantom/windows-client.html) · [资料来源与返佣说明](https://phantom-release.github.io/Phantom/about.html)
+[在线指南](https://phantom.jichang.space/) · [套餐](https://phantom.jichang.space/plans.html) · [客户端](https://phantom.jichang.space/windows-client.html) · [资料来源与返佣说明](https://phantom.jichang.space/about.html)
 
 本指南由 Phantom-Release 维护，使用 AI 辅助整理并按已访问的官方页面核对套餐与客户端目录。账户、订阅、购买和售后由官方平台处理。
+
+## 事实与变化记录
+
+[浏览事实记录](https://phantom.jichang.space/evidence.html) · [下载 JSON](data/observations.json)。本轮在 Edge 核对套餐列表、教程目录与官方常见问题。每项事实保留观察日期、来源、方法与后续核查条件。官网页面值、用户确认、历史汇总和待核查事项分别标注；不以编辑日期替代核查日期。
+
+官网常见问题写明不支持退款；这属于商家表述，未验证实际退款处理。官网声称支持部分流媒体和 AI 服务，本轮未实测。带宽单位、签到周期、试用到账及不同页面的邀请码一致性仍待核查。
 
 ## 注册与使用入口
 
@@ -18,7 +24,7 @@ Phantom 1 元机场的天蝎座套餐月付 **1 元**，提供 **100G 月流量*
 | 普通注册 | [直接注册](https://pin.dianping.men/auth/register) | 不使用邀请码 |
 | 控制台 | [Phantom Dashboard](https://pin.dianping.men/app/dashboard) | 登录后查看套餐、订阅和账户信息 |
 
-通过邀请码 `vyMwqgOF` 注册，可获得 2 天、5G 流量试用；每日签到累计可额外获得 2G 流量。推荐者可能获得平台返佣。
+通过邀请码 `vyMwqgOF` 注册，可获得 2 天、5G 流量试用；每日签到累计可额外获得 2G 流量。推荐者可能获得平台返佣。 **[用户确认 · 待复核]**：来自 2026-10-28 用户确认；本轮未验证到账，签到累计周期不明确。
 
 ## 查看节点配置参考
 
@@ -59,7 +65,7 @@ Hysteria2 的上、下行参数是客户端配置值，不是实测速率。
 
 ## 配置客户端
 
-官方使用文档提供 Phantom 安卓版、Mac 版和 Win 版教程；iOS 栏目列有 Nextin、Clash Lite 和 ClashMi，官网将前两项标为推荐。请按自己的平台阅读对应教程。核验日期：2026 年 10 月 28 日。
+官方使用文档提供 Phantom 安卓版、Mac 版和 Win 版教程；iOS 栏目列有 Nextin、Clash Lite 和 ClashMi，官网将前两项标为推荐。请按自己的平台阅读对应教程。核验日期：2026 年 11 月 4 日。
 
 ### 开始前准备
 
@@ -80,7 +86,7 @@ Hysteria2 的上、下行参数是客户端配置值，不是实测速率。
 2. 按客户端说明启用代理连接。
 3. 打开常用网站，检查能否访问。
 
-**验证结果：** 常用网站能访问后，继续测试日常应用。报错或其他应用无法连接时，按 [连接排障指南](https://phantom-release.github.io/Phantom/network-troubleshooting.html)检查。
+**验证结果：** 常用网站能访问后，继续测试日常应用。报错或其他应用无法连接时，按 [连接排障指南](https://phantom.jichang.space/network-troubleshooting.html)检查。
 
 使用其他客户端时，先核对内核是否支持订阅中的协议。Mieru 是否可用取决于具体内核版本。
 
@@ -95,7 +101,7 @@ Hysteria2 的上、下行参数是客户端配置值，不是实测速率。
 
 ## 套餐与购买
 
-核验日期：2026 年 10 月 28 日。来源：[Phantom 官方购买套餐页](https://pin.dianping.men/app/plan)（需登录）。
+核验日期：2026 年 11 月 4 日。来源：[Phantom 官方购买套餐页](https://pin.dianping.men/app/plan)（需登录）。
 
 | 套餐 | 月付 | 流量 |
 | --- | ---: | ---: |

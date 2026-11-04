@@ -1,0 +1,311 @@
+{
+  "schemaVersion": 1,
+  "release": "2026-11-04",
+  "timezone": "Australia/Sydney",
+  "statusLabels": {
+    "observed": "官网页面已核对",
+    "reported": "用户确认 · 待复核",
+    "historical": "历史记录",
+    "unresolved": "待核查"
+  },
+  "sources": [
+    {
+      "id": "plans",
+      "title": "Phantom 官方套餐页（需登录）",
+      "url": "https://pin.dianping.men/app/plan"
+    },
+    {
+      "id": "docs",
+      "title": "Phantom 官方教程目录（需登录）",
+      "url": "https://pin.dianping.men/app/knowledge"
+    },
+    {
+      "id": "previous",
+      "title": "2026-10-28 来源记录（固定版本）",
+      "url": "https://github.com/Phantom-Release/Phantom/blob/14410869d3ae6672cb67ba34fe8d50405f33e373/SOURCES.md"
+    },
+    {
+      "id": "snapshot",
+      "title": "原仓库节点统计（固定版本）",
+      "url": "https://github.com/Phantom-Release/Phantom/blob/3cd5aec587fb28eccd585992301c523a2784fbb8/README.md"
+    },
+    {
+      "id": "baseline",
+      "title": "本轮修改前网页源码（固定版本）",
+      "url": "https://github.com/Phantom-Release/Phantom/tree/14410869d3ae6672cb67ba34fe8d50405f33e373"
+    },
+    {
+      "id": "faq",
+      "title": "Phantom 官方常见问题（需登录）",
+      "url": "https://pin.dianping.men/app/knowledge/1?lang=zh-CN"
+    }
+  ],
+  "claims": [
+    {
+      "id": "scorpio",
+      "title": "天蝎座月付套餐",
+      "category": "套餐",
+      "reviewAfterDays": 30,
+      "observations": [
+        {
+          "id": "scorpio-20261028",
+          "date": "2026-10-28",
+          "status": "historical",
+          "value": {
+            "cny": 1,
+            "traffic": "100G"
+          },
+          "text": "月付 1 元，月流量 100G。",
+          "sources": [
+            "previous"
+          ],
+          "method": "沿用仓库来源记录；本轮未回到当日现场。"
+        },
+        {
+          "id": "scorpio-20261104",
+          "date": "2026-11-04",
+          "status": "observed",
+          "value": {
+            "cny": 1,
+            "traffic": "100G"
+          },
+          "text": "月付 1 元，月流量 100G。",
+          "sources": [
+            "plans"
+          ],
+          "method": "在 Edge 登录态套餐列表读取名称、月付价格与流量；未下单。"
+        }
+      ]
+    },
+    {
+      "id": "aquarius",
+      "title": "水瓶座月付套餐",
+      "category": "套餐",
+      "reviewAfterDays": 30,
+      "observations": [
+        {
+          "id": "aquarius-20261028",
+          "date": "2026-10-28",
+          "status": "historical",
+          "value": {
+            "cny": 10,
+            "traffic": "300G"
+          },
+          "text": "月付 10 元，月流量 300G。",
+          "sources": [
+            "previous"
+          ],
+          "method": "沿用仓库来源记录。"
+        },
+        {
+          "id": "aquarius-20261104",
+          "date": "2026-11-04",
+          "status": "observed",
+          "value": {
+            "cny": 10,
+            "traffic": "300G"
+          },
+          "text": "月付 10 元，月流量 300G。",
+          "sources": [
+            "plans"
+          ],
+          "method": "在 Edge 套餐列表核对；未下单。"
+        }
+      ]
+    },
+    {
+      "id": "gemini",
+      "title": "双子座月付套餐",
+      "category": "套餐",
+      "reviewAfterDays": 30,
+      "observations": [
+        {
+          "id": "gemini-20261028",
+          "date": "2026-10-28",
+          "status": "historical",
+          "value": {
+            "cny": 20,
+            "traffic": "650G"
+          },
+          "text": "月付 20 元，月流量 650G。",
+          "sources": [
+            "previous"
+          ],
+          "method": "沿用仓库来源记录。"
+        },
+        {
+          "id": "gemini-20261104",
+          "date": "2026-11-04",
+          "status": "observed",
+          "value": {
+            "cny": 20,
+            "traffic": "650G"
+          },
+          "text": "月付 20 元，月流量 650G。",
+          "sources": [
+            "plans"
+          ],
+          "method": "在 Edge 套餐列表核对；未下单。"
+        }
+      ]
+    },
+    {
+      "id": "clients",
+      "title": "客户端教程目录",
+      "category": "客户端",
+      "reviewAfterDays": 30,
+      "observations": [
+        {
+          "id": "clients-20261104",
+          "date": "2026-11-04",
+          "status": "observed",
+          "text": "目录列有 Phantom 安卓版、Win 版和 Mac 版；iOS 列有 Nextin（推荐）、Clash Lite（推荐）、ClashMi（不推荐）。",
+          "sources": [
+            "docs"
+          ],
+          "method": "Edge 读取教程目录；推荐标签属于官网表述，未验证安装包、内核版本或兼容性。"
+        }
+      ]
+    },
+    {
+      "id": "trial",
+      "title": "邀请码试用权益",
+      "category": "权益",
+      "reviewAfterDays": 7,
+      "observations": [
+        {
+          "id": "trial-20261028",
+          "date": "2026-10-28",
+          "status": "reported",
+          "text": "用户确认：邀请码注册可获 2 天、5G 试用。",
+          "sources": [
+            "previous"
+          ],
+          "method": "仓库记载的用户确认；未进行新账户注册和到账测试。",
+          "nextCheck": "核对当前官方规则，并记录新账户实际到账的额度与到期时间。"
+        }
+      ]
+    },
+    {
+      "id": "checkin",
+      "title": "签到额外流量",
+      "category": "权益",
+      "reviewAfterDays": 7,
+      "observations": [
+        {
+          "id": "checkin-20261028",
+          "date": "2026-10-28",
+          "status": "reported",
+          "text": "用户确认：每日签到累计另获 2G。累计周期与单次额度不明确。",
+          "sources": [
+            "previous"
+          ],
+          "method": "沿用用户确认；不能解释为每天固定到账 2G。",
+          "nextCheck": "核对签到规则、累计周期、单次额度和到账记录。"
+        }
+      ]
+    },
+    {
+      "id": "nodes",
+      "title": "50 条历史节点配置",
+      "category": "节点",
+      "observations": [
+        {
+          "id": "nodes-20261028",
+          "date": "2026-10-28",
+          "status": "historical",
+          "text": "历史汇总为 50 条配置：TUIC 24、VLESS 16、Mieru 7、Hysteria2 3；共 8 类地区标签。",
+          "sources": [
+            "snapshot",
+            "previous"
+          ],
+          "method": "继承已发布汇总；未重新获取原始订阅，整理日期不等于采集日期。",
+          "nextCheck": "获取获准使用的新快照，记录采集时间、条目去重方法和统计口径；不公开凭据。"
+        }
+      ]
+    },
+    {
+      "id": "bandwidth",
+      "title": "带宽字段的单位",
+      "category": "套餐",
+      "observations": [
+        {
+          "id": "bandwidth-20261104",
+          "date": "2026-11-04",
+          "status": "unresolved",
+          "text": "官网带宽栏：天蝎座 100G、水瓶座 300G、双子座“无限制”。前两项单位含义未确认。",
+          "sources": [
+            "plans"
+          ],
+          "method": "Edge 直接读取原文；页面可见值不等于已确认的速率规格。",
+          "nextCheck": "取得官方对单位和限速规则的明确解释；此前不换算 Mbps，也不推断实测速率。"
+        }
+      ]
+    },
+    {
+      "id": "invite",
+      "title": "不同页面的邀请码不一致",
+      "category": "入口",
+      "observations": [
+        {
+          "id": "invite-20261104",
+          "date": "2026-11-04",
+          "status": "unresolved",
+          "text": "本轮修改前首页及 README 与部分内页使用不同的邀请码。有效性与权益是否一致尚未核对。",
+          "sources": [
+            "baseline"
+          ],
+          "method": "检查仓库固定版本中的推荐入口；保留原有链接，未替换推荐关系。",
+          "nextCheck": "由维护者确认统一使用的推荐入口，并核对试用规则。"
+        }
+      ]
+    },
+    {
+      "id": "performance",
+      "title": "实时节点与使用表现",
+      "category": "节点",
+      "observations": [
+        {
+          "id": "performance-20261104",
+          "date": "2026-11-04",
+          "status": "unresolved",
+          "text": "缺少本轮实时节点数、速度、可用性及流媒体或 AI 服务解锁的测量证据。",
+          "sources": [
+            "previous"
+          ],
+          "method": "本轮仅核对网页信息，没有开展网络实测。",
+          "nextCheck": "记录设备、网络、时间、节点、目标服务与重复测试结果，再发布有边界的观察。"
+        },
+        {
+          "id": "performance-faq-20261104",
+          "date": "2026-11-04",
+          "status": "unresolved",
+          "text": "官方常见问题声称支持 ChatGPT、Netflix、TikTok 和 Disney+，但本轮没有节点实测，无法确认当前可用性与解锁范围。",
+          "sources": [
+            "faq"
+          ],
+          "method": "Edge 读到商家自述；网页表述与实测证据分开记录。",
+          "nextCheck": "以具体节点、目标服务、网络与时间重复测试；不要将商家自述写成已验证能力。"
+        }
+      ]
+    },
+    {
+      "id": "refund",
+      "title": "官网退款说明",
+      "category": "购买",
+      "reviewAfterDays": 30,
+      "observations": [
+        {
+          "id": "refund-20261104",
+          "date": "2026-11-04",
+          "status": "observed",
+          "text": "官方常见问题写明不支持退款，并建议先试用再购买。",
+          "sources": [
+            "faq"
+          ],
+          "method": "在 Edge 阅读官方常见问题；记录的是商家表述，未进行退款申请或验证处理结果。"
+        }
+      ]
+    }
+  ]
+}

@@ -13,6 +13,10 @@ for(const [file,page] of pages)for(const link of page.links){if(/^(https?:|mailt
 const home=readFileSync('index.html','utf8');
 assert(home.includes('data-aff="hero"')&&home.includes('data-aff="closing"'),'home needs visible registration entry points');
 for(const file of readdirSync('.').filter(f=>f.endsWith('.html'))){const text=readFileSync(file,'utf8');assert(text.includes('data-aff="navigation"'),'missing registration navigation '+file);for(const match of text.matchAll(/auth\/register\?code=([A-Za-z0-9]+)/g))assert(match[1]==='vyMwqgOF','inconsistent referral destination '+file);}
+const faq=JSON.parse(readFileSync('data/faq.json','utf8'));
+const faqIds=new Set();
+for(const item of faq.items){assert(!faqIds.has(item.id),'duplicate FAQ '+item.id);faqIds.add(item.id);assert(item.question&&item.answer&&item.basis&&item.link?.href,'incomplete FAQ '+item.id);assert(!/可能|待复核|待核查|尚未|或许|大概/.test(item.answer),'FAQ needs a definite supported answer: '+item.id);assert(home.includes('id="faq-'+item.id+'"')&&home.includes(item.answer),'FAQ not synchronized '+item.id);}
+assert(!home.includes('{{'),'unfilled home template');
 const evidence=readFileSync('evidence.html','utf8');
 for(const claim of db.claims){const item=claim.observations.at(-1);if(item.value===undefined){const section=evidence.slice(evidence.indexOf('id="'+claim.id+'"'),evidence.indexOf('</article>',evidence.indexOf('id="'+claim.id+'"')));assert(!section.includes('两次记录值一致'),'missing value cannot imply unchanged: '+claim.id);}}
 assert([24,16,7,3].reduce((a,b)=>a+b,0)===50,'protocol totals');

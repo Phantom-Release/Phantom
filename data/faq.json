@@ -1,0 +1,17 @@
+{
+  "references": [
+    {"title":"Mullvad FAQ","url":"https://mullvad.net/en/help/faq","use":"参考账户、价格、设备和连接问题的组织方式，不采用其服务政策。"},
+    {"title":"Proton VPN 新用户指南与 FAQ","url":"https://protonvpn.com/support/protonvpn-setup-guide","use":"参考结论在前、动作和帮助入口在后的写法，不采用其产品能力。"}
+  ],
+  "items": [
+    {"id":"price","question":"Phantom 最低多少钱？","answer":"天蝎座月付 1 元，包含 100G 月流量。水瓶座月付 10 元、300G；双子座月付 20 元、650G。","link":{"href":"plans.html","text":"查看套餐说明"},"basis":"data/observations.json#scorpio,aquarius,gemini"},
+    {"id":"purchase","question":"如何注册和购买套餐？","answer":"使用本页注册入口创建账户并登录控制台，打开“购买套餐”，选择套餐并完成购买。","link":{"href":"{{AFF_URL}}","text":"注册并使用"},"basis":"已核对的官方注册入口及套餐页。"},
+    {"id":"devices","question":"支持哪些设备？","answer":"官方文档提供 Windows、Android 和 macOS 的 Phantom 客户端教程。iOS 可按 Nextin、Clash Lite 或 ClashMi 的教程配置。","link":{"href":"windows-client.html","text":"查看设备配置指南"},"basis":"data/observations.json#clients"},
+    {"id":"download","question":"客户端下载和安装教程在哪里？","answer":"登录控制台，打开“使用文档”，选择对应系统的教程，按文档下载、安装并导入订阅。","link":{"href":"https://pin.dianping.men/app/knowledge","text":"打开官方使用文档"},"basis":"官方教程目录。"},
+    {"id":"renew","question":"续费后如何重新连接？","answer":"先断开客户端连接，再重启 Phantom 并重新连接。确认订阅名称与购买的套餐名称一致。","link":{"href":"https://pin.dianping.men/app/knowledge/1?lang=zh-CN","text":"查看官方续费说明"},"basis":"官方常见问题：正确的续费订阅方法。"},
+    {"id":"traffic","question":"流量用完了，但套餐还没到期，怎么办？","answer":"在控制台重新购买或续费套餐，完成后重新连接客户端。","link":{"href":"https://pin.dianping.men/app/plan","text":"打开套餐页"},"basis":"官方常见问题：流量用完了时间还剩怎么办。"},
+    {"id":"apps","question":"浏览器能用，其他应用不能用，怎么设置？","answer":"在 Phantom 电脑端开启虚拟网卡模式（TUN），再断开并重新连接。虚拟网卡模式需要管理员权限。","link":{"href":"network-troubleshooting.html","text":"查看连接排障指南"},"basis":"官方常见问题：Phantom 电脑端连接模式介绍。"},
+    {"id":"refund","question":"支持退款吗？","answer":"不支持退款。购买前请先确认套餐额度和使用需求。","link":{"href":"https://pin.dianping.men/app/knowledge/1?lang=zh-CN","text":"查看官方退款说明"},"basis":"data/observations.json#refund"},
+    {"id":"support","question":"遇到问题怎么联系客服？","answer":"在控制台打开“我的工单”提交问题，或使用页面右下角的在线客服。反馈时说明设备系统、网络、错误提示和已尝试的步骤。","link":{"href":"https://pin.dianping.men/app/ticket","text":"打开工单页"},"basis":"官方常见问题：如何获得技术支持；已核对的控制台入口。"}
+  ]
+}
